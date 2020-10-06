@@ -1,0 +1,1 @@
+alert ip any any -> any any (msg:"Luhn-valid data detected (Possible PAN)"; luajit:luhn.lua; flowbits:set,possible-pci; sid:246010001; rev:2;)
